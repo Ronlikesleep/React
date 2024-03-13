@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+}
+
+.grid-item-unClicked {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: grey solid 1px;
+  width: 100px;
+  height: 100px;
+}
+
+.grid-item-Clicked {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: grey solid 1px;
+}
