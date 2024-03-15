@@ -14,7 +14,7 @@ export default function Credit() {
             <Nav />
             <div className='cards-container'>
                 <div className='credit-container'>
-                    <Card sx={{ minWidth: '400px', maxWidth: '600px', minHeight: '400px' }}>
+                    <Card sx={{ minWidth: '300px', maxWidth: '600px', minHeight: '400px' }}>
                         <CardMedia
                             sx={{ height: '200px' }}
                             image="src/assets/mydog.jpg"
@@ -29,12 +29,12 @@ export default function Credit() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Github Link(unfinished)</Button>
+                            <Button size="small" href='https://github.com/Ronlikesleep/React/tree/main/Shanrong-Zhang-assignment2'>Github Link</Button>
                         </CardActions>
                     </Card>
                 </div>
                 <div className='credit-container'>
-                    <Card sx={{ minWidth: '400px', maxWidth: '600px', minHeight: '400px' }}>
+                    <Card sx={{ minWidth: '300px', maxWidth: '600px', minHeight: '400px' }}>
 
                         <CardContent>
                             <Typography sx={{ marginTop: "20px" }} gutterBottom variant="h5" component="div">

@@ -6,13 +6,20 @@ import Buttons from '../Component/Buttons.jsx';
 import Nav from './../Component/Nav'
 export default function Gameplay() {
     return (<div>
-        <Nav/>
+        <Nav />
         <ClassNameProvider>
             <BlackGridCountProvider>
-                <ShowCoundNumber />
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    margin: 0,
+                    padding: 0,
+                }}>
+                    <ShowCoundNumber />
+                </div>
                 <MultiGrids />
-                <Buttons />
             </BlackGridCountProvider>
         </ClassNameProvider>
-    </div>);
+    </div >);
 }

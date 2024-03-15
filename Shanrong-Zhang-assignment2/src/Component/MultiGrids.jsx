@@ -2,17 +2,54 @@ import SingleGrid from "./SingleGrid";
 import "./../style.css"
 import { ClassNameContext } from '../State/ClassNameProvider';
 import { useContext } from "react";
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Buttons from "./Buttons";
 export default function MultiGrids() {
     const [classNameList, setGridClassListName] = useContext(ClassNameContext);
     const gridList = [];
-    for (let i = 0; i < 400; i++) {
+    const ROWNUM = 20;
+    const COLNUM = 20;
+    const oneGridSize = 20;
+    const width = COLNUM * oneGridSize;
+    for (let i = 0; i < ROWNUM * COLNUM; i++) {
         gridList.push(<SingleGrid className={classNameList[i]} id={i} key={i} />);
     }
-    return (<div>
-        <div className="grid-container">
-            {gridList}
-        </div>
-    </div>
+    return (<React.Fragment>
+        <CssBaseline />
+        <Container maxWidth="m" sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+        }}>
+            <Box
+                className='grid-container'
+                sx={{
+                    width: `${width}px`,
+                    gridTemplateColumns: `repeat(auto-fill, minmax(${oneGridSize}px, 1fr))`,
+                    gridAutoRows: `${oneGridSize}px`,
+                    '@media (max-width: 600px)': {
+                        gridTemplateColumns: `repeat(auto-fill, ${oneGridSize * 0.5}px)`,
+                        gridAutoRows: `${oneGridSize * 0.5}px`,
+                        width: `${ROWNUM * oneGridSize * 0.5}px`,
+                    }
+                }}
+            >
+                {gridList}
+            </Box>
+
+        </Container>
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: '20px'
+        }}><Buttons /></div>
+
+    </React.Fragment>
     )
 
 }

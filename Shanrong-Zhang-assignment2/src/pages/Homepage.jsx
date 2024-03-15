@@ -11,7 +11,7 @@ export default function HomePage() {
             <Nav />
             <CssBaseline />
             <Container maxWidth="m">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', padding: '20px' }}>
+                <Box sx={{ bgcolor: '#cfe8fc', height: '100%', padding: '20px', marginTop: '10px' }}>
                     <h1 >
                         Game of Life Explanation
                     </h1>
