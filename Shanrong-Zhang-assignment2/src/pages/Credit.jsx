@@ -10,7 +10,7 @@ import Nav from './../Component/Nav'
 
 export default function Credit() {
     return (
-        <>
+        <div>
             <Nav />
             <div className='cards-container'>
                 <div className='credit-container'>
@@ -54,6 +54,6 @@ export default function Credit() {
                     </Card>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

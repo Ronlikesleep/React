@@ -26,15 +26,15 @@ export default function MultiGrids() {
             width: '100%',
         }}>
             <Box
-                className='grid-container'
                 sx={{
+                    display: 'grid',
                     width: `${width}px`,
                     gridTemplateColumns: `repeat(auto-fill, minmax(${oneGridSize}px, 1fr))`,
                     gridAutoRows: `${oneGridSize}px`,
                     '@media (max-width: 600px)': {
-                        gridTemplateColumns: `repeat(auto-fill, ${oneGridSize * 0.5}px)`,
-                        gridAutoRows: `${oneGridSize * 0.5}px`,
-                        width: `${ROWNUM * oneGridSize * 0.5}px`,
+                        gridTemplateColumns: `repeat(auto-fill, ${oneGridSize * 0.7}px)`,
+                        gridAutoRows: `${oneGridSize * 0.7}px`,
+                        width: `${ROWNUM * oneGridSize * 0.7}px`,
                     }
                 }}
             >
