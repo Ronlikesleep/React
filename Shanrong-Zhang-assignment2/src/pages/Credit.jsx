@@ -30,7 +30,7 @@ export default function Credit() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" href='https://github.com/Ronlikesleep/React/tree/main/Shanrong-Zhang-assignment2'>Github Link</Button>
+                            <Button size="small" href='https://github.com/Ronlikesleep/Shanrong_zhang_GoL'>Github Link</Button>
                         </CardActions>
                     </Card>
                 </div>
