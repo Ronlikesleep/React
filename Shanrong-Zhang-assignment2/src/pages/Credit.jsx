@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './../style.css';
 import Nav from './../Component/Nav'
+import myDogImage from '../assets/mydog.jpg';
 
 export default function Credit() {
     return (
@@ -17,7 +18,7 @@ export default function Credit() {
                     <Card sx={{ minWidth: '300px', maxWidth: '600px', minHeight: '400px' }}>
                         <CardMedia
                             sx={{ height: '200px' }}
-                            image="src/assets/mydog.jpg"
+                            image={myDogImage}
                             title="my dog"
                         />
                         <CardContent>
